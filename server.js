@@ -7,6 +7,7 @@ const database = new DatabasePostgres();
 
 server.listen({
   port: process.env.PORT ?? 3333,
+  host: "0.0.0.0",
 });
 
 server.get("/videos", async (request) => {
